@@ -65,7 +65,7 @@ Step by Step procedure
     ```
     ansible-playbook demo_export_objects.yml -e '{input_tag: [all]}' -e @configure_connection_controller_credentials.yml --ask-vault-password
     ```
-5. **Review results**
+6. **Review results**
 
    Every file and directory with exported data should be reviewed before use them as Configuration as Code.
 
@@ -113,4 +113,9 @@ Step by Step procedure
    │   └── current_projects.yaml
    └── ORGANIZATIONLESS
        └── current_credentials.yaml
+
+7. **Now, What?**
+
+  Once you have expoted the objects you want to manage using CasC, please review [this](https://github.com/redhat-cop/controller_configuration/blob/devel/examples/automatetheautomation/README.md) in order to create objects in your AAP using configurtion as code parctices.
+
    ```
