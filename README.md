@@ -116,6 +116,6 @@ Step by Step procedure
 
 7. **Now, What?**
 
-  Once you have expoted the objects you want to manage using CasC, please review [this](https://github.com/redhat-cop/controller_configuration/blob/devel/examples/automatetheautomation/README.md) in order to create objects in your AAP using configurtion as code parctices.
+  Once you have exported the objects you want to manage using CasC, please review [this](https://github.com/redhat-cop/controller_configuration/blob/devel/examples/automatetheautomation/README.md) in order to create objects in your AAP using configurtion as code practices.
 
    ```
