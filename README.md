@@ -68,3 +68,49 @@ Step by Step procedure
 5. **Review results**
 
    Every file and directory with exported data should be reviewed before use them as Configuration as Code.
+
+   Example of file tree created:
+
+   ```
+   $ tree /tmp/filetree_output
+   /tmp/filetree_output
+   ├── casc-admin
+   │   ├── current_credentials.yaml
+   │   ├── current_groups_casc-admin Localhost.yaml
+   │   ├── current_hosts_casc-admin Localhost.yaml
+   │   ├── current_inventories.yaml
+   │   ├── current_job_templates.yaml
+   │   ├── current_organization.yaml
+   │   ├── current_projects.yaml
+   │   └── current_workflow_job_templates.yaml
+   ├── casc-myorg
+   │   ├── current_credentials.yaml
+   │   ├── current_groups_casc-myorg Localhost.yaml
+   │   ├── current_hosts_casc-myorg Localhost.yaml
+   │   ├── current_inventories.yaml
+   │   ├── current_job_templates.yaml
+   │   ├── current_organization.yaml
+   │   ├── current_projects.yaml
+   │   ├── current_teams.yaml
+   │   ├── current_users_casc-myorg-orgadmin.yaml
+   │   ├── current_users_casc-myorg_user1.yaml
+   │   ├── current_users_casc-myorg_user2.yaml
+   │   ├── current_users_casc-myorg_user3.yaml
+   │   └── current_workflow_job_templates.yaml
+   ├── current_credential_types.yaml
+   ├── current_roles_admin.yaml
+   ├── current_roles_casc-myorg-orgadmin.yaml
+   ├── current_roles_casc-myorg team1.yaml
+   ├── current_roles_casc-myorg_user1.yaml
+   ├── current_roles_casc-myorg_user2.yaml
+   ├── current_roles_casc-myorg_user3.yaml
+   ├── Default
+   │   ├── current_groups_Demo Inventory.yaml
+   │   ├── current_hosts_Demo Inventory.yaml
+   │   ├── current_inventories.yaml
+   │   ├── current_job_templates.yaml
+   │   ├── current_organization.yaml
+   │   └── current_projects.yaml
+   └── ORGANIZATIONLESS
+       └── current_credentials.yaml
+   ```
