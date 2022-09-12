@@ -17,23 +17,23 @@ Helpful Links
 
 
 
-Step by Step procedure
-----------------------
+# Step by Step procedure
 
-1. **Configure Dependencies**
+## 1. **Configure Dependencies**
 
   A collections/requirements.yml file is needed. This repo has an example.
 
-2. **Install collections**
+## 2. **Install collections**
+
 
   ```
   ansible-galaxy collection install -r collections/requirements.yml -p collections
   ```
-3. **Create playbook**
+## 3. **Create playbook**
 
   A playbook to launch the filetree_create role is needed. This repo has an example: demo_export_objects.yml.
 
-4. **Create variables file**
+## 4. **Create variables file**
 
    A variables file with credential and access variables encrypted with vault is needed. To create it:
 
@@ -52,7 +52,7 @@ Step by Step procedure
 
    ```
 
-5. **Run playbook**
+## 5. **Run playbook**
 
     Playbook Extra Variables:
 
@@ -65,7 +65,7 @@ Step by Step procedure
     ```
     ansible-playbook demo_export_objects.yml -e '{input_tag: [all]}' -e @configure_connection_controller_credentials.yml --ask-vault-password
     ```
-5. **Review results**
+## 6. **Review results**
 
    Every file and directory with exported data should be reviewed before use them as Configuration as Code.
 
@@ -114,3 +114,8 @@ Step by Step procedure
    └── ORGANIZATIONLESS
        └── current_credentials.yaml
    ```
+## 7. **Now, What?**
+
+  Once you have exported the objects you want to manage using CasC, please review [this](https://github.com/redhat-cop/controller_configuration/blob/devel/examples/automatetheautomation/README.md) in order to create objects in your AAP using configurtion as code practices.
+
+
